@@ -6,7 +6,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     text-decoration: none;
-    color: #222222;
+    color: #444444;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -14,14 +14,14 @@
 
 nav {
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
 }
 
 .nav_content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -31,13 +31,18 @@ nav {
 }
 
 .nav_links a {
-    padding: 10px 15px;
+    padding: 10px 20px;
     font-size: 1.1rem;
     font-weight: 500;
+    transition: .3s ease-out;
+}
+
+.nav_links a:hover {
+    color: #3960cc;
 }
 
 .btn {
-    background-color: #3960cc;
+    background-color: #0e46df;
     border: none;
     outline: none;
     padding: 10px 20px;
@@ -50,4 +55,113 @@ nav {
 
 .btn:hover {
     transform: translateY(-2px);
+}
+
+/*hero style*/
+
+.hero {
+    height: 80vh;
+    display: flex;
+}
+
+.hero_content {
+    width: 1200px;
+    margin: auto;
+}
+
+.headline {
+    font-size: 4rem;
+    color: #111111;
+}
+
+.description {
+    margin: 20px 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #777777;
+    line-height: 1.5;
+}
+
+
+
+.hero_btns .btn{
+    padding: 20px 40px;
+    font-size: 1.2rem;
+}
+
+.hero_btns .btn:last-child {
+    background-color: transparent;
+    border: 1px solid #dddddd;
+    color: #111111;
+    margin-left: 23px;
+}
+
+.hero_corousel {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.hero_corousel h2 {
+    font-size: 1rem;
+    width: 200px;
+    font-weight: 500;
+    margin-right: 30px;
+    color: #aaaaaa;
+}
+
+.carousel_wrapper img{
+    display: inline-block;
+    width: 150px;
+    padding: 0 30px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.corousel_content {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.corousel_content::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    content: "";
+    z-index: 2;
+}
+
+.corousel_content::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+    content: "";
+    z-index: 2;
+}
+
+.corousel_content:hover .carousel_wrapper {
+    animation-play-state: paused;
+}
+
+.carousel_wrapper {
+    display: flex;
+    min-width: fit-content;
+    align-items: center;
+    animation:  35s slide infinite linear;
 }
