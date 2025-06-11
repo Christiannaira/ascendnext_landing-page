@@ -275,3 +275,52 @@ nav {
     color: #111111;
     margin-left: 23px;
 }
+
+/*qualification style*/
+
+.qualification {
+    margin-top: 8rem;
+}
+
+.qualification_content {
+    width: 1200px;
+    margin: auto;
+}
+
+.qualification_content_headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qualification_content_headline p {
+    max-width: 500px;
+    text-align: left;
+}
+
+.qualification_cards {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.qualification_cards .card {
+    background-color: #ffffff;
+    margin: 2rem 1rem 2rem 0;
+    box-shadow: 0px 0px 200px 0px rgba(0,0,0,.2);
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+}
+
+.qualification_cards .card_img img {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.qualification_cards .card h3 {
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #222222;
+}
