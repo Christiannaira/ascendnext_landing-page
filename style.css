@@ -82,8 +82,6 @@ nav {
     line-height: 1.5;
 }
 
-
-
 .hero_btns .btn{
     padding: 20px 40px;
     font-size: 1.2rem;
@@ -197,15 +195,27 @@ nav {
 .about_features .feature {
     display: flex;
     align-items: center;
+    margin: 5rem 0;
 }
 
 .feature > div {
     max-width: 50%;
 }
 
+@keyframes feature {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(5%);
+    }
+}
+
 .feature_img img {
-    width: 90%;
+    position: relative;
+    max-width: 85%;
     display: block;
+    animation: 8s feature infinite alternate;
 }
 
 .feature_des {
@@ -224,6 +234,7 @@ nav {
 }
 
 .feature_list {
+    margin-top: 2rem;
     list-style: none;
 }
 
@@ -239,4 +250,28 @@ nav {
     color: #0e46df;
     font-size: 1.4rem;
     margin-right: 7px;
+}
+
+.feature2 .feature_des {
+    padding: 3rem 3rem 3rem 0rem;
+}
+
+.feature2 .feature_img img {
+    margin: auto;
+}
+
+.about_btns {
+    text-align: center;
+}
+
+.about_btns .btn {
+    padding: 20px 40px;
+    font-size: 1.2rem;
+}
+
+.about_btns .btn:last-child {
+    background-color: transparent;
+    border: 1px solid #dddddd;
+    color: #111111;
+    margin-left: 23px;
 }
