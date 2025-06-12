@@ -304,11 +304,17 @@ nav {
 }
 
 .qualification_cards .card {
+    position: relative;
     background-color: #ffffff;
     margin: 2rem 1rem 2rem 0;
     box-shadow: 0px 0px 200px 0px rgba(0,0,0,.2);
     border-radius: 5px;
     border: 1px solid #dddddd;
+    transition: .3s ease-out;
+}
+
+.qualification_cards .card:hover {
+    transform: translateY(-5px);
 }
 
 .qualification_cards .card_img img {
@@ -371,5 +377,55 @@ nav {
     font-size: 1rem;
 }
 
+/*values section styles*/
+
+.values {
+    margin-top: 8rem;
+}
+
+.values_content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.values_cards {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.value_card {
+    background-color: #f1f1f7;
+    padding: 2rem;
+    width: 30%;
+    margin: 1rem;
+    border-radius: 6px;
+}
+
+.value_card img {
+    display: inline-block;
+    width: 100%;
+    border-radius: 6px;
+}
 
 
+.value_card h3 {
+    font-size: 1.5rem;
+    color: #222222;
+}
+
+.value_card p {
+    margin: 1rem 0 2rem;
+    color: #777777;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.values_btn {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.values_btn .btn{
+    padding: 20px 40px;
+    font-size: 1.2rem;
+}
