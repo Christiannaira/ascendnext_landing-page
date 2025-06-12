@@ -681,3 +681,53 @@ nav {
     padding: 20px 40px;
     font-size: 1.2rem;
 }
+
+/*footer style*/
+
+.footer {
+    border-top: 1px solid #ddd;
+    margin-top: 8rem;
+    padding: 2rem 0 0;
+}
+
+.footer_content {
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+.footer_headline {
+    border-bottom: 1px solid #ddd;
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_content h2 {
+    color: #222;
+}
+
+.footer_btns .btn {
+    padding: 20px 40px;
+    font-size: 1.2rem;
+}
+
+.footer_btns .btn:last-child {
+    background-color: transparent;
+    border: 1px solid #dddddd;
+    color: #111111;
+    margin-left: 23px;
+}
+
+.footer_copy {
+    border-top: 1px solid #dddd;
+    margin-top: 5rem;
+    padding: 3rem 0;
+}
+
+.footer_copy h3 {
+    color: #555555;
+    font-weight: 400;
+    font-size: 1rem;
+}
