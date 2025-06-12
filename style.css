@@ -510,3 +510,46 @@ nav {
     font-weight: 400;
     font-size: 1.1rem;
 }
+
+/*cta style*/
+
+.cta {
+    margin-top: 8rem;
+}
+
+.cta_content {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f1f1f7;
+    display: flex;
+    align-items: center;
+}
+
+.cta_card h2 {
+    font-size: 2.1rem;
+    color: #212121;
+    font-weight: 500;
+}
+
+.cta_card .btn {
+    margin-top: 1.5rem;
+    padding: 20px 40px;
+    font-size: 1.2rem;
+}
+
+.cta_content .cta_card:first-child {
+    width: 90%;
+    padding: 2.5rem 4rem;
+}
+
+.cta_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta_img img {
+    display: inline-block;
+    width: 50%;
+    border-radius: 8px;
+}
