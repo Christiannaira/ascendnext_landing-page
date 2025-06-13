@@ -22,7 +22,7 @@
                     <h2>Ascendnext</h2>
                 </div>
 
-                <div class="nav_links">
+                <div class="nav_links" id="nav_link">
                     <a href="#about">About</a>
                     <a href="#industries">Industries</a>
                     <a href="#capabilities">Capabilities</a>
@@ -32,7 +32,7 @@
 
                 <div class="nav_btn">
                     <button class="btn">Get started</button>
-                    <i class='bx bx-menu'></i>
+                    <i class='bx bx-menu' onclick="handleMenu()"></i>
                 </div>
             </div>
 
@@ -498,9 +498,20 @@
 
     </footer>
     
+    
     <script>
-      
-    </script>
+
+        let nav_link = document.getElementById("nav_link");
+
+        function handleMenu() {
+            alert("hello");
+            
+            nav_link.style.right = 0;
+             
+        }
+       
+
+    </script>  
 
 </body>
 </html>

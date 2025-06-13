@@ -741,8 +741,12 @@ nav {
 @media screen and (max-width: 991px) {
     .nav_btn .bx {
         display: inline-block;
+        cursor: pointer;
     }
 
+    body {
+        overflow: hidden;
+    }
 
     .nav_links {
         position: absolute;
@@ -751,7 +755,7 @@ nav {
         height: 100%;
         background-color: #fff;
         z-index: 1;
-        left: 0;
+        right: -60rem;
         top: 5rem;
         display: flex;
         flex-direction: column;
