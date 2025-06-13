@@ -57,6 +57,12 @@ nav {
     transform: translateY(-2px);
 }
 
+.nav_btn .bx,
+.nav_link_btn {
+    display: none;
+}
+
+
 /*hero style*/
 
 .hero {
@@ -730,4 +736,47 @@ nav {
     color: #555555;
     font-weight: 400;
     font-size: 1rem;
+}
+
+@media screen and (max-width: 991px) {
+    .nav_btn .bx {
+        display: inline-block;
+    }
+
+
+    .nav_links {
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 1;
+        left: 0;
+        top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 1.3rem;
+    }
+
+    .nav_link_btn {
+        margin-top: 5rem;
+        display: block;
+        width: 100%;
+        padding: 20px 40px;
+        font-size: 1.2rem;
+    }
+
+    .nav_links a {
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        font-weight: 400;
+        transition: .3s ease-out;
+    }
+
+    .corousel_content::before {
+        z-index: -1;
+    }
+
+
 }
