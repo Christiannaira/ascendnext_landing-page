@@ -504,9 +504,14 @@
         let nav_link = document.getElementById("nav_link");
 
         function handleMenu() {
-            alert("hello");
             
-            nav_link.style.right = 0;
+            if (nav_link.className == "nav_links") {
+                alert("open");
+                nav_link.className == "nav_links nav_open";
+            } else {
+                alert("close");
+                nav_link.className == "nav_links";
+            }
              
         }
        

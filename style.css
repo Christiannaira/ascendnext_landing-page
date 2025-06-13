@@ -763,6 +763,10 @@ nav {
         padding: 1.3rem;
     }
 
+    .nav_links .nav_open {
+        right: 0;
+    }
+    
     .nav_link_btn {
         margin-top: 5rem;
         display: block;
