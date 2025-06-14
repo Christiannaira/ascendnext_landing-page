@@ -32,7 +32,8 @@
 
                 <div class="nav_btn">
                     <button class="btn">Get started</button>
-                    <i class='bx bx-menu' onclick="handleMenu()"></i>
+                    <i class='bx bx-menu' onclick="handleMenu()" id="open_menu"></i>
+                    <i class='bx bx-x' onclick="handleMenu()" id="close_menu"></i> 
                 </div>
             </div>
 
@@ -502,18 +503,31 @@
     <script>
 
         let nav_link = document.getElementById("nav_link");
+        let open = false;
+
+        let body = document.body;
+
+        let open_menu = document.getElementById("open_menu");
+        let close_menu = document.getElementById("close_menu");
 
         function handleMenu() {
-            
-            if (nav_link.className == "nav_links") {
-                alert("open");
-                nav_link.className == "nav_links nav_open";
+
+            if (open) {
+                nav_link.style.right = "-60rem";
+                body.style.overflow = "visible";
+                close_menu.style.display = "none";
+                open_menu.style.display = "inline-block";
+                open = false;
             } else {
-                alert("close");
-                nav_link.className == "nav_links";
+                nav_link.style.right = 0;
+                body.style.overflow = "hidden";
+                close_menu.style.display = "inline-block";
+                open_menu.style.display = "none";
+                open = true;
             }
-             
+
         }
+
        
 
     </script>  
