@@ -61,16 +61,15 @@ nav {
 .nav_btn .bx-x,
 .nav_link_btn {
     display: none;
-    font-size: 1.5rem;
+    font-size: 2.1rem;
     vertical-align: middle;
     margin: 0 8px;
     transition: .3s ease-out;
+    background-color: #0e46df;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
 }
-
-.nav_btn .bx:hover {
-    color: #0e46df;
-}
-
 
 
 /*hero style*/
@@ -756,6 +755,10 @@ nav {
 
     .bx-x {
         cursor: pointer;
+    }
+
+    .nav_btn .btn {
+        display: none;
     }
 
     .nav_links {
