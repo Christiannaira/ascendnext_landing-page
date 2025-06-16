@@ -80,7 +80,7 @@ nav {
 }
 
 .hero_content {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -748,6 +748,11 @@ nav {
 }
 
 @media screen and (max-width: 991px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
     .nav_btn .bx-menu{
         display: inline-block;
         cursor: pointer;
@@ -797,6 +802,7 @@ nav {
 
     /*hero style*/
     .hero {
+        max-width: 100%;
         padding: 0 2rem;
         height: 70vh;
     }
@@ -808,6 +814,13 @@ nav {
     .description {
         font-size: 1.2rem;
     }
+
+    .hero_corousel {
+        flex-direction: column;
+        align-items: start;
+    }
+
+   
 
     /*about style*/
 
